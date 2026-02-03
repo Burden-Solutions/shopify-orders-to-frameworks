@@ -1,0 +1,20 @@
+{
+  "shopifyOrder": {
+    "id": 820982911946154500,
+    "name": "#9999",
+    "orderNumber": 1234,
+    "customer": "jon@example.com",
+    "total": "2273.98",
+    "lineItems": 5,
+    "created": "2026-02-02T13:29:14+11:00"
+  },
+  "frameworksPayload": {
+    "customerId": 1043,
+    "orderReference": "#9999",
+    "orderDate": "2026-02-02",
+    "contactName": "Steve Shipper",
+    "contactEmail": "jon@example.com",
+    "lineItems": 5,
+    "unitOfMeasure": "EA"
+  }
+}

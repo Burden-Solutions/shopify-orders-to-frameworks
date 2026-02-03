@@ -1,0 +1,532 @@
+{
+  "id": 820982911946154500,
+  "admin_graphql_api_id": "gid://shopify/Order/820982911946154500",
+  "app_id": 123456789,
+  "checkout_id": 987654321098765400,
+  "checkout_token": "abcd1234efgh5678",
+  "confirmed": true,
+  "contact_email": "jon@example.com",
+  "created_at": "2026-02-02T13:29:14+11:00",
+  "currency": "AUD",
+  "current_subtotal_price": "2273.98",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    }
+  },
+  "current_total_discounts": "0.00",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "2273.98",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    }
+  },
+  "current_total_tax": "0.00",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "customer_locale": "en",
+  "device_id": null,
+  "discount_applications": [],
+  "discount_codes": [],
+  "email": "jon@example.com",
+  "estimated_tax": false,
+  "financial_status": "paid",
+  "fulfillment_status": null,
+  "gateway": "shopify_payments",
+  "landing_site": "/",
+  "landing_site_ref": null,
+  "location_id": null,
+  "name": "#9999",
+  "note": null,
+  "note_attributes": [],
+  "number": 9999,
+  "order_number": 1234,
+  "order_status_url": "https://burdens.myshopify.com/123456789/orders/820982911946154500/authenticate?key=abc123",
+  "payment_gateway_names": [
+    "shopify_payments"
+  ],
+  "phone": null,
+  "presentment_currency": "AUD",
+  "processed_at": "2026-02-02T13:29:14+11:00",
+  "reference": null,
+  "referring_site": "",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "2273.98",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    }
+  },
+  "tags": "",
+  "tax_exempt": false,
+  "taxes_included": false,
+  "test": false,
+  "token": "abcd1234efgh5678ijkl9012mnop3456",
+  "total_discounts": "0.00",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_line_items_price": "2273.98",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "2273.98",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "2273.98",
+      "currency_code": "AUD"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_tax": "0.00",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "AUD"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 0,
+  "updated_at": "2026-02-02T13:29:14+11:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "John",
+    "address1": "123 Billing Street",
+    "phone": "555-555-BILL",
+    "city": "Billington",
+    "zip": "40002",
+    "province": "Kentucky",
+    "country": "United States",
+    "last_name": "Smith",
+    "address2": "",
+    "company": "",
+    "latitude": 37.1234,
+    "longitude": -86.5678,
+    "name": "John Smith",
+    "country_code": "US",
+    "province_code": "KY"
+  },
+  "customer": {
+    "id": 1234567890123,
+    "email": "jon@example.com",
+    "first_name": "John",
+    "last_name": "Smith",
+    "phone": null,
+    "accepts_marketing": false,
+    "accepts_marketing_updated_at": "2026-02-02T13:29:14+11:00",
+    "admin_graphql_api_id": "gid://shopify/Customer/1234567890123",
+    "created_at": "2026-01-15T10:30:00+11:00",
+    "updated_at": "2026-02-02T13:29:14+11:00",
+    "state": "enabled",
+    "total_spent": "2273.98",
+    "total_spent_set": {
+      "shop_money": {
+        "amount": "2273.98",
+        "currency_code": "AUD"
+      },
+      "presentment_money": {
+        "amount": "2273.98",
+        "currency_code": "AUD"
+      }
+    },
+    "last_order_id": 820982911946154500,
+    "tags": "",
+    "currency": "AUD",
+    "addresses": [],
+    "tax_exempt": false,
+    "tax_exemptions": [],
+    "verified_email": true,
+    "multipass_identifier": null,
+    "marketing_opt_in_level": null,
+    "sms_marketing_consent": null,
+    "tax_exemptions_count": 0,
+    "default_address": null
+  },
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 866550311766439000,
+      "admin_graphql_api_id": "gid://shopify/LineItem/866550311766439000",
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Aulic Beau Monde Oblong Led Mirror Matte Black",
+      "origin_location": {
+        "id": 12345678901,
+        "country_code": "AU",
+        "province_code": "NSW",
+        "name": "Sydney Warehouse",
+        "address1": "123 Warehouse St",
+        "address2": "",
+        "city": "Sydney",
+        "zip": "2000"
+      },
+      "price": "815.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "815.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "815.00",
+          "currency_code": "AUD"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9876543210987,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "ALEX02450",
+      "tax_lines": [],
+      "taxable": true,
+      "title": "Aulic Beau Monde Oblong Led Mirror Matte Black",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        }
+      },
+      "variant_id": 123456789012345680,
+      "variant_inventory_management": null,
+      "variant_title": null,
+      "vendor": "Aulic",
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 789012345678901200,
+      "admin_graphql_api_id": "gid://shopify/LineItem/789012345678901200",
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Lens Protection Plan (2 Year)",
+      "origin_location": {
+        "id": 12345678901,
+        "country_code": "AU",
+        "province_code": "NSW",
+        "name": "Sydney Warehouse",
+        "address1": "123 Warehouse St",
+        "address2": "",
+        "city": "Sydney",
+        "zip": "2000"
+      },
+      "price": "19.99",
+      "price_set": {
+        "shop_money": {
+          "amount": "19.99",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "19.99",
+          "currency_code": "AUD"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9876543210988,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "LENS-PROTECT-2YR",
+      "tax_lines": [],
+      "taxable": true,
+      "title": "Lens Protection Plan (2 Year)",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        }
+      },
+      "variant_id": 123456789012345680,
+      "variant_inventory_management": null,
+      "variant_title": null,
+      "vendor": "Service Provider",
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 890123456789012400,
+      "admin_graphql_api_id": "gid://shopify/LineItem/890123456789012400",
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Premium Leather Case",
+      "origin_location": {
+        "id": 12345678901,
+        "country_code": "AU",
+        "province_code": "NSW",
+        "name": "Sydney Warehouse",
+        "address1": "123 Warehouse St",
+        "address2": "",
+        "city": "Sydney",
+        "zip": "2000"
+      },
+      "price": "24.99",
+      "price_set": {
+        "shop_money": {
+          "amount": "24.99",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "24.99",
+          "currency_code": "AUD"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9876543210989,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "CASE-LEATHER-PREM",
+      "tax_lines": [],
+      "taxable": true,
+      "title": "Premium Leather Case",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        }
+      },
+      "variant_id": 123456789012345680,
+      "variant_inventory_management": null,
+      "variant_title": null,
+      "vendor": "Accessory Brand",
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 141249953214522980,
+      "admin_graphql_api_id": "gid://shopify/LineItem/141249953214522980",
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Aulic Beau Monde Oblong Led Mirror Gun Metal",
+      "origin_location": {
+        "id": 12345678901,
+        "country_code": "AU",
+        "province_code": "NSW",
+        "name": "Sydney Warehouse",
+        "address1": "123 Warehouse St",
+        "address2": "",
+        "city": "Sydney",
+        "zip": "2000"
+      },
+      "price": "815.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "815.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "815.00",
+          "currency_code": "AUD"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9876543210990,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "ALEX02490",
+      "tax_lines": [],
+      "taxable": true,
+      "title": "Aulic Beau Monde Oblong Led Mirror Gun Metal",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        }
+      },
+      "variant_id": 123456789012345680,
+      "variant_inventory_management": null,
+      "variant_title": null,
+      "vendor": "Aulic",
+      "duties": [],
+      "discount_allocations": []
+    },
+    {
+      "id": 257004973105704600,
+      "admin_graphql_api_id": "gid://shopify/LineItem/257004973105704600",
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Aulic Canterbury Arch Led Mirror 500X900X30mm Matte White",
+      "origin_location": {
+        "id": 12345678901,
+        "country_code": "AU",
+        "province_code": "NSW",
+        "name": "Sydney Warehouse",
+        "address1": "123 Warehouse St",
+        "address2": "",
+        "city": "Sydney",
+        "zip": "2000"
+      },
+      "price": "609.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "609.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "609.00",
+          "currency_code": "AUD"
+        }
+      },
+      "product_exists": true,
+      "product_id": 9876543210991,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "ALEX02510",
+      "tax_lines": [],
+      "taxable": true,
+      "title": "Aulic Canterbury Arch Led Mirror 500X900X30mm Matte White",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "AUD"
+        }
+      },
+      "variant_id": 123456789012345680,
+      "variant_inventory_management": null,
+      "variant_title": null,
+      "vendor": "Aulic",
+      "duties": [],
+      "discount_allocations": []
+    }
+  ],
+  "payment_details": {
+    "credit_card_bin": null,
+    "avs_result_code": null,
+    "cvv_result_code": null,
+    "credit_card_number": "•••• •••• •••• 4242",
+    "credit_card_company": "Visa",
+    "credit_card_name": "John Smith",
+    "credit_card_expiry_month": 12,
+    "credit_card_expiry_year": 2027,
+    "payment_method": "credit_card",
+    "authorization_code": "123456"
+  },
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Steve",
+    "address1": "123 Shipping Street",
+    "phone": "555-555-SHIP",
+    "city": "Shippington",
+    "zip": "40003",
+    "province": "Kentucky",
+    "country": "United States",
+    "last_name": "Shipper",
+    "address2": "",
+    "company": "",
+    "latitude": 37.1234,
+    "longitude": -86.5678,
+    "name": "Steve Shipper",
+    "country_code": "US",
+    "province_code": "KY"
+  },
+  "shipping_lines": []
+}

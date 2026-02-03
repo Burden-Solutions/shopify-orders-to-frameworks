@@ -1,0 +1,77 @@
+{
+  "validateOnly": false,
+  "dsSalesOrder": {
+    "salesOrder": [
+      {
+        "idCust": 1043,
+        "custOrderRef": "#9999",
+        "despatchMethod": "COUR",
+        "dateOrd": "2026-02-02",
+        "deliverToAddress1": "NSW 2000",
+        "state": "NSW",
+        "postCode": "2000",
+        "zipCode": "2000",
+        "contactName": "Steve Shipper",
+        "contactPhone": "555-555-SHIP",
+        "contactEmail": "jon@example.com",
+        "salesOrderLine": [
+          {
+            "lineNo": 1,
+            "idProd": "ALEX02450",
+            "qtyTran": 1,
+            "idUom": "EA",
+            "globalTxnId": null,
+            "tallyText": null,
+            "numPack": null,
+            "unitSell": 815,
+            "comment": "Aulic Beau Monde Oblong Led Mirror Matte Black"
+          },
+          {
+            "lineNo": 2,
+            "idProd": "LENS-PROTECT-2YR",
+            "qtyTran": 1,
+            "idUom": "EA",
+            "globalTxnId": null,
+            "tallyText": null,
+            "numPack": null,
+            "unitSell": 19.99,
+            "comment": "Lens Protection Plan (2 Year)"
+          },
+          {
+            "lineNo": 3,
+            "idProd": "CASE-LEATHER-PREM",
+            "qtyTran": 1,
+            "idUom": "EA",
+            "globalTxnId": null,
+            "tallyText": null,
+            "numPack": null,
+            "unitSell": 24.99,
+            "comment": "Premium Leather Case"
+          },
+          {
+            "lineNo": 4,
+            "idProd": "ALEX02490",
+            "qtyTran": 1,
+            "idUom": "EA",
+            "globalTxnId": null,
+            "tallyText": null,
+            "numPack": null,
+            "unitSell": 815,
+            "comment": "Aulic Beau Monde Oblong Led Mirror Gun Metal"
+          },
+          {
+            "lineNo": 5,
+            "idProd": "ALEX02510",
+            "qtyTran": 1,
+            "idUom": "EA",
+            "globalTxnId": null,
+            "tallyText": null,
+            "numPack": null,
+            "unitSell": 609,
+            "comment": "Aulic Canterbury Arch Led Mirror 500X900X30mm Matte White"
+          }
+        ]
+      }
+    ]
+  }
+}
