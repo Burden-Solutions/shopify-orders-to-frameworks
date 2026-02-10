@@ -120,7 +120,7 @@ function buildFrameworksPayload(shopifyOrder, store) {
   };
 
   // Add discount line item for burdens orders if total discount exists
-  if (shopifyOrder.total_discounts && parseFloat(shopifyOrder.total_discounts) > 0 && store === 'burdens') {
+  if (shopifyOrder.total_discounts && parseFloat(shopifyOrder.total_discounts) > 0) {
     const discountAmount = parseFloat(shopifyOrder.total_discounts);
     const nextLineNo = payload.dsSalesOrder.salesOrder[0].salesOrderLine.length + 1;
     
@@ -129,7 +129,7 @@ function buildFrameworksPayload(shopifyOrder, store) {
       idProd: "DISCWEB",
       qtyTran: -1,
       idUom: "EA",
-      unitSell: discountAmount, // Positive amount as required by Frameworks
+      unitSell: discountAmount,
       comment: "Web Order Discount",
       priceOverrideReason:"WEB"
     });
