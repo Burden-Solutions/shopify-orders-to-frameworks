@@ -48,17 +48,17 @@ const logger = winston.createLogger({
           let log = `${timestamp} ${level}: ${message}`;
           
           // Add emoji indicators for better readability
-          if (message.includes('[DEBUG]')) {
-            log = `🔍 ${log}`;
-          } else if (message.includes('[SUCCESS]')) {
-            log = `✅ ${log}`;
-          } else if (message.includes('[ERROR]')) {
-            log = `❌ ${log}`;
-          } else if (message.includes('[DEBUG]')) {
-            log = `🔧 ${log}`;
-          } else if (message.includes('Webhook')) {
-            log = `🔔 ${log}`;
-          }
+          // if (message.includes('[DEBUG]')) {
+          //   log = `🔍 ${log}`;
+          // } else if (message.includes('[SUCCESS]')) {
+          //   log = `✅ ${log}`;
+          // } else if (message.includes('[ERROR]')) {
+          //   log = `❌ ${log}`;
+          // } else if (message.includes('[DEBUG]')) {
+          //   log = `🔧 ${log}`;
+          // } else if (message.includes('Webhook')) {
+          //   log = `🔔 ${log}`;
+          // }
           
           // Add stack trace if available
           if (stack) {
