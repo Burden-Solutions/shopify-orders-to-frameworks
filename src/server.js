@@ -28,8 +28,6 @@ module.exports = function startServer() {
       version: require('../package.json').version,
       database: process.env.DATABASE_URL ? 'postgresql' : 'sqlite'
     };
-
-    logger.info('Health check passed', { status: health.status });
     res.status(200).json(health);
   });
 
