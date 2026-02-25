@@ -1,6 +1,7 @@
 const axios = require('axios');
 const config = require('../config/env');
 const logger = require('../config/logger');
+const webhookService = require('../logger/webhooks');
 
 class FrameworksService {
   constructor() {
@@ -129,6 +130,14 @@ class FrameworksService {
           errorTable: response.data.errorTable
         });
         
+        // Send Frameworks API error notification
+        await webhookService.sendSystemAlert('frameworks_error', {
+          customerRef: orderPayload.dsSalesOrder.salesOrder[0].custOrderRef,
+          error: errorMessage,
+          errorTable: response.data.errorTable,
+          status: response.status
+        });
+        
         // Throw error so transform service can handle it
         throw new Error(`Frameworks API error: ${errorMessage}`);
       } else {
@@ -148,6 +157,14 @@ class FrameworksService {
         response: error.response?.data,
         status: error.response?.status,
         customerRef: orderPayload.dsSalesOrder.salesOrder[0].custOrderRef
+      });
+      
+      // Send API error notification
+      await webhookService.sendSystemAlert('frameworks_error', {
+        customerRef: orderPayload.dsSalesOrder.salesOrder[0].custOrderRef,
+        error: error.message,
+        status: error.response?.status,
+        type: 'api_connection_error'
       });
       
       // If it's an authentication error, try to login again and retry

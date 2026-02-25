@@ -1,6 +1,7 @@
 const db = require('../db/sqlite');
 const frameworksService = require('./frameworks.service');
 const logger = require('../config/logger');
+const webhookService = require('../logger/webhooks');
 
 module.exports = async function processOrder() {
   logger.processing('Starting order processing job...');
@@ -37,6 +38,14 @@ module.exports = async function processOrder() {
       );
       
       logger.success(`Order ${order.id} successfully processed in Frameworks ERP`);
+      
+      // Send success notification
+      await webhookService.sendOrderNotification({
+        shopifyOrderId: order.shopify_order_id,
+        orderNumber: shopifyOrder.name || shopifyOrder.order_number,
+        store: order.store,
+        error: null
+      }, 'success');
     } catch (processingError) {
       logger.orderError(`Failed to process order ${order.id}: ${processingError.message}`, { 
         orderId: order.id, 
@@ -52,6 +61,14 @@ module.exports = async function processOrder() {
          WHERE id=?`,
         [processingError.message, order.id]
       );
+      
+      // Send failure notification
+      await webhookService.sendOrderNotification({
+        shopifyOrderId: order.shopify_order_id,
+        orderNumber: shopifyOrder.name || shopifyOrder.order_number,
+        store: order.store,
+        error: processingError.message
+      }, 'error');
     }
   } catch (dbError) {
     logger.orderError(`Database error: ${dbError.message}`, { 

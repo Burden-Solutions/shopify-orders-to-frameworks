@@ -1,6 +1,7 @@
 const express = require('express');
 const webhookRoutes = require('./routes/webhook');
 const logger = require('./config/logger');
+const webhookService = require('./logger/webhooks');
 
 module.exports = function startServer() {
   const app = express();
@@ -136,20 +137,34 @@ module.exports = function startServer() {
   process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 
   // Handle uncaught exceptions
-  process.on('uncaughtException', (error) => {
+  process.on('uncaughtException', async (error) => {
     logger.orderError('Uncaught Exception', { 
       error: error.message,
       stack: error.stack 
     });
+    
+    // Send system alert for uncaught exception
+    await webhookService.sendSystemAlert('system_error', {
+      error: error.message,
+      stack: error.stack
+    });
+    
     process.exit(1);
   });
 
   // Handle unhandled promise rejections
-  process.on('unhandledRejection', (reason, promise) => {
+  process.on('unhandledRejection', async (reason, promise) => {
     logger.orderError('Unhandled Rejection', { 
       reason: reason,
       promise: promise 
     });
+    
+    // Send system alert for unhandled rejection
+    await webhookService.sendSystemAlert('system_error', {
+      error: reason.toString(),
+      type: 'unhandled_promise_rejection'
+    });
+    
     process.exit(1);
   });
 

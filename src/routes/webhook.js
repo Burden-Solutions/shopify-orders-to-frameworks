@@ -2,6 +2,7 @@ const router = require('express').Router();
 const verifyWebhook = require('../utils/verifyWebhook');
 const orderQueue = require('../queue/order.queue');
 const logger = require('../config/logger');
+const webhookService = require('../logger/webhooks');
 
 router.post('/:store/orders-create', async (req, res) => {
   logger.webhook(`Webhook received for store: ${req.params.store}`, { 
@@ -33,6 +34,13 @@ router.post('/:store/orders-create', async (req, res) => {
       error: error.message,
       stack: error.stack,
       store: req.params.store
+    });
+    
+    // Send webhook error notification
+    await webhookService.sendSystemAlert('webhook_error', {
+      store: req.params.store,
+      orderId: req.body?.id,
+      error: error.message
     });
   }
 });
