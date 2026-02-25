@@ -1,6 +1,6 @@
 const DiscordService = require('./discord.service');
 const TeamsService = require('./teams.service');
-const logger = require('../config/logger');
+const logger = require('../../config/logger');
 
 class WebhookService {
   constructor() {
